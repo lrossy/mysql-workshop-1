@@ -18,7 +18,7 @@
 
 ```
 # Start MySQL Instance
-$ mysql-ctl start
+$ systemctl start mysql.service
 
 # Connect to the MySQL Instance
 $ mysql -u<USERNAME> -p<PASSWORD>
@@ -43,16 +43,14 @@ $ mysql -u<USERNAME> -p<PASSWORD>
 ## Workshop Instructions
 
 * Fork this repository
-* Create a new Cloud9 Workspace
+* Make sure you have access to a running mySQL server, either on your laptop or on Digital Ocean
 * For every exercise in this Workshop:
   * Create a new file named "exercise-n.txt", containing:
     * The SQL Statement used, when applicable
     * The SQL Statement results, when applicable
-* After the first exercise you commit, do a pull request from your master branch. Then, commit and push after each exercise so that we can see your progress.
-
 
 ### Exercise 1
-* Connect to the MySQL instance within your Workspace using your Cloud9 username
+* Connect to the MySQL instance 
 
 ### Exercise 2
 * Create a database named ```decodemtl_test``` within MySQL
